@@ -25,7 +25,7 @@ let iterativfunction = function (arr , target){
     let middle = -1;
 
     while(index == -1 && left <= right){
-        middle = Math.floor((left + right) / 2)
+        middle = Math.trunc((left + right) / 2)
         let k = arr[middle];
         if(k == target){
             index = middle;
@@ -54,6 +54,7 @@ for( let i = numberlist.length - 1; i >= 0;i--){
     }
 }
 console.log("numberlist: " + numberlist)
+
 
 for( let i = numberlist1.length - 1; i >= 0;i--){
     for(let j = 0; j<i ; j++){
