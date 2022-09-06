@@ -1,0 +1,24 @@
+#krydsogbolletabel{
+    width: 150px;
+    height: 150px;
+    border-collapse:  collapse;
+    border: 3px solid blue;
+}
+#t1 {
+    border: 3px solid blue;
+    font-size: 50px;
+    text-align: center;
+    padding-right: 10px;
+
+}
+
+#main{
+    display: -ms-inline-grid;
+    
+    grid-template-columns: 100px auto ;
+
+}
+td{
+    
+    padding-right: 20px;
+}

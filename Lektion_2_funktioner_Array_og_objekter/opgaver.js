@@ -212,13 +212,13 @@ let parantes = "{[{{{((()))}}}]}"
 let parantes1 = "{[{{{((())}}}]}"
 
 
-function checkparantes(strpar){
+function checkparantes(strpar) {
     let stak = [];
-    for(let element of strpar){
-        if(element === "{" || element === "[" || element === "("){
+    for (let element of strpar) {
+        if (element === "{" || element === "[" || element === "(") {
             stak.push(element);
-        } else if(element === "}" || element === "]" || element === ")")
-        stak.pop(element);
+        } else if (element === "}" || element === "]" || element === ")")
+            stak.pop(element);
     }
     return stak.length == 0;
 
@@ -229,12 +229,12 @@ console.log(checkparantes(parantes1))
 //Opgave 2.7
 
 //Max as array function:
-let numbers = [5,3,1,4,56,3];
+let numbers = [5, 3, 1, 4, 56, 3];
 
-numbers.max = function maxarray(){
+numbers.max = function maxarray() {
     let max = this[0];
-    for(let i = 1; i < this.length; i++){
-        if(this[i] > max){
+    for (let i = 1; i < this.length; i++) {
+        if (this[i] > max) {
             max = this[i];
         }
     }
@@ -245,7 +245,7 @@ console.log(numbers.max())
 
 //Contains as array function:
 
-numbers.contains = function contains(element){
+numbers.contains = function contains(element) {
     return this.includes(element)
 }
 
@@ -253,9 +253,9 @@ console.log(numbers.contains(5))
 console.log(numbers.contains(52))
 
 //Sum as array function:
-numbers.sum = function sum(){
+numbers.sum = function sum() {
     let sum = 0;
-    for(let tal of this){
+    for (let tal of this) {
         sum += tal;
     }
     return sum;

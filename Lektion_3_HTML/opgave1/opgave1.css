@@ -1,0 +1,13 @@
+h1{
+    text-align: left;
+    text-decoration: underline;
+}
+ol{
+    display:inline-block;
+        border:5px solid rgb(255, 0, 0);
+        padding:20px;
+        
+}
+ol li{
+    text-align: center;
+}
