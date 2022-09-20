@@ -1,0 +1,75 @@
+
+img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+    background-color: gold;
+}
+
+input{
+    max-width: 20px;
+    color: solid green;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,14,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.dices {
+    display: grid;
+    grid-template-columns: auto 300px auto;
+    grid-column-gap: 0px;
+    margin-left: 385px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: auto 300px repeat(5, 80px) auto;
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    }
+    
+    .OnesName { grid-area: 1 / 2 / 2 / 3; }
+    .TwosName { grid-area: 2 / 2 / 3 / 3; }
+    .ThreesName { grid-area: 3 / 2 / 4 / 3; }
+    .FoursName { grid-area: 4 / 2 / 5 / 3; }
+    .FivesName { grid-area: 5 / 2 / 6 / 3; }
+    .SixesName { grid-area: 6 / 2 / 7 / 3; }
+    .OnepairName { grid-area: 7 / 2 / 8 / 3; }
+    .TwopairName { grid-area: 8 / 2 / 9 / 3; }
+    .OnesInput { grid-area: 1 / 3 / 2 / 4; }
+    .TwosInput { grid-area: 2 / 3 / 3 / 4; }
+    .ThreesInput { grid-area: 3 / 3 / 4 / 4; }
+    .FoursInput { grid-area: 4 / 3 / 5 / 4; }
+    .FivesInput { grid-area: 5 / 3 / 6 / 4; }
+    .SixesInput { grid-area: 6 / 3 / 7 / 4; }
+    .OnepairInput { grid-area: 7 / 3 / 8 / 4; }
+    .TwopairInput { grid-area: 8 / 3 / 9 / 4; }
+    .sumName { grid-area: 6 / 4 / 7 / 5; }
+    .sumInput { grid-area: 6 / 5 / 7 / 6; }
+    .bonusName { grid-area: 6 / 6 / 7 / 7; }
+    .bonusInput { grid-area: 6 / 7 / 7 / 8; }
+    .ThreeSame { grid-area: 9 / 2 / 10 / 3; }
+    .FourSame { grid-area: 10 / 2 / 11 / 3; }
+    .fullHouse { grid-area: 11 / 2 / 12 / 3; }
+    .smallStraight { grid-area: 12 / 2 / 13 / 3; }
+    .largeStraight { grid-area: 13 / 2 / 13 / 3; }
+    .ThreeSameInput { grid-area: 9 / 3 / 10 / 4; }
+    .FourSameInput { grid-area: 10 / 3 / 11 / 4; }
+    .fullHouseInput { grid-area: 11 / 3 / 12 / 4; }
+    .smallStraightInput { grid-area: 12 / 3 / 13 / 4; }
+    .largeStraightInput { grid-area: 13 / 3 / 13 / 4; }
+    .Chance { grid-area: 14 / 2 / 14 / 3; }
+    .Yatzy { grid-area: 15 / 2 / 15 / 3; }
+    .Total { grid-area: 15 / 4 / 15 / 4; }
+    .ChanceInput { grid-area: 14 / 3 / 14 / 3; }
+    .YatzyInput { grid-area: 15 / 3 / 15 / 3; }
+    .TotalInput { grid-area: 15 / 5 / 15 / 5; }
+    
