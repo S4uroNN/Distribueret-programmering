@@ -99,10 +99,10 @@ function sameValuePoints(value) {
    
 }
 
-
 function showPoints() {
     let copyResultFields = document.getElementsByName("inputfield")
     for (let i = 0; i <= 5; i++) {
         resultFields[i].value = "" + sameValuePoints(i + 1);
+        
     }
 }
