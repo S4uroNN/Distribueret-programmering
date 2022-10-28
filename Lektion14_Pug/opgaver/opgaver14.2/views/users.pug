@@ -1,0 +1,19 @@
+doctype html
+body
+    h1 Liste med ting og sager
+    each user in users
+         li #{user.navn}
+    h1 using object passed from js
+    p hurra for #{navn}
+    p #{navn} er #{alder} år
+    p 
+        |han/hun er 
+        - 
+        if alder<12
+            |barn 
+        else if alder<20
+            |teenager
+        else 
+            |voksen
+    
+        

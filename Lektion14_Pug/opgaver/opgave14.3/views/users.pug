@@ -1,0 +1,21 @@
+-var id= 1
+
+h1 Users
+table(border = 2)
+    th Id
+    th First Name
+    th Last Name
+    th Email
+    th Country
+    th Time Zone
+    each result in results
+       
+            tr 
+                td #{result.name.first}
+                td #{result.name.last}
+                td #{result.email}
+                td #{result.location.country}
+                td #{result.location.timezone.description}
+            tr
+        
+            
